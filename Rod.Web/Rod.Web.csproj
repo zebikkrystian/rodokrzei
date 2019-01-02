@@ -124,6 +124,7 @@
     <Content Include="Content\images\managements.png" />
     <Content Include="Content\images\maps.png" />
     <Content Include="Content\images\news.png" />
+    <Content Include="Content\images\person.png" />
     <Content Include="Content\images\s1.jpg" />
     <Content Include="Content\images\bg.jpg" />
     <Content Include="Content\images\s2.jpg" />
@@ -131,6 +132,9 @@
     <Content Include="Content\images\logo2.png" />
     <Content Include="Content\images\logo3.png" />
     <Content Include="Content\images\logo4.png" />
+    <Content Include="Content\images\user1.png" />
+    <Content Include="Content\images\user2.png" />
+    <Content Include="Content\images\user3.png" />
     <Content Include="Content\lib\bootstrap\bootstrap.bundle.min.js" />
     <Content Include="Content\lib\bootstrap\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -153,7 +157,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Managements.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
