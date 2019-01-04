@@ -113,6 +113,8 @@
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DocumentsController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -124,25 +126,17 @@
     <Content Include="Content\images\managements.png" />
     <Content Include="Content\images\maps.png" />
     <Content Include="Content\images\news.png" />
-    <Content Include="Content\images\person.png" />
     <Content Include="Content\images\s1.jpg" />
-    <Content Include="Content\images\bg.jpg" />
     <Content Include="Content\images\s2.jpg" />
     <Content Include="Content\images\s3.jpg" />
     <Content Include="Content\images\logo2.png" />
     <Content Include="Content\images\logo3.png" />
     <Content Include="Content\images\logo4.png" />
-    <Content Include="Content\images\user1.png" />
-    <Content Include="Content\images\user2.png" />
-    <Content Include="Content\images\user3.png" />
     <Content Include="Content\lib\bootstrap\bootstrap.bundle.min.js" />
     <Content Include="Content\lib\bootstrap\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="ApplicationInsights.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
@@ -167,6 +161,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="Views\Documents\All.cshtml" />
+    <Content Include="Views\News\All.cshtml" />
+    <Content Include="Views\Shared\_Menu.cshtml" />
+    <Content Include="Views\Shared\_TitleBar.cshtml" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

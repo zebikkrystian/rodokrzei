@@ -1,34 +1,22 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="pl-PL">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <meta name="description" content="Rod Okrzei, Rodzinne Ogródki Działkowe Okrzei, Rod Okrzei Częstochowa, www.rodokrzei.pl">
+    <title>Rod Okrzei - @ViewBag.Title</title>
     <link href="~/Content/lib/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="~/Content/Site.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <meta name="google-site-verification" content="0uilwPj7K2sbjMlywKbdHhuicQd1DmYdM9_N78d-J-8" />
 </head>
 <body>
     <div class="app">
-        <div class="titlebar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-10">
-                        <span>
-                            <i class="fas fa-phone"></i>796-106-189
-                        </span>
-                        <span>
-                            <i class="fas fa-envelope"></i>zarzad@rodokrzei.pl
-                        </span>
-                    </div>
-                    <div class="col-2 social-links">
-                        <i class="fab fa-facebook-square"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
+        @Html.Partial("_TitleBar")
+
         <header class="header">
             <div class="container">
                 <div style="display: flex;">
@@ -45,37 +33,15 @@
                         </a>
                     </div>
 
-
-                    <div class="menu">
-                        <nav class="navbar navbar-expand-lg navbar-light" style="justify-content: flex-end">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-
-                            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                                <ul class="navbar-nav ml-auto">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/Home/News">Aktualności</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/Home/Managements">Zarząd</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/Home/Documents">Dokumenty</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/Home/Contact">Kontakt</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
+                    @Html.Partial("_Menu")
+                    
                 </div>
             </div>
         </header>
         <main class="main">
             @RenderBody()
         </main>
+        <div class="spacer"></div>
         <footer class="footer">
             <div class="container">
                 Wszystkie prawa zastrzeżone &copy; @DateTime.Now.Year <br />Oficjalna strona ROD Okrzei w Częstochowie
