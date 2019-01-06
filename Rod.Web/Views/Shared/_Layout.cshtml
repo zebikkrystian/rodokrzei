@@ -14,28 +14,24 @@
 </head>
 <body>
     <div class="app">
-        
+
         @Html.Partial("_TitleBar")
 
         <header class="header">
             <div class="container">
-                <div style="display: flex;">
 
-                    <div>
-                        <a href="/" style="overflow: auto; display: block; position: relative;">
-                            <div style="float: left; padding-right: 130px">
-                                <img src="~/Content/images/logo4.png" height="100px" />
-                            </div>
-                            <div style="position: absolute; top: 0; left: 150px; font-family: 'Lobster Two', cursive; height: 100px; text-align: center; padding-top: 30px; color: inherit">
-                                <div style="font-size: 40px">Rod Okrzei</div>
-                                <div style="font-size: 18px; padding-top: 5px;">Częstochowa</div>
-                            </div>
-                        </a>
+                <a href="/" style="overflow: auto; display: block; position: relative;">
+                    <div style="float: left; padding-right: 130px">
+                        <img src="~/Content/images/logo4.png" height="100px" />
                     </div>
+                    <div style="position: absolute; top: 0; left: 150px; font-family: 'Lobster Two', cursive; height: 100px; text-align: center; padding-top: 30px; color: inherit">
+                        <div style="font-size: 40px">Rod Okrzei</div>
+                        <div style="font-size: 18px; padding-top: 5px;">Częstochowa</div>
+                    </div>
+                </a>
 
-                    @Html.Partial("_Menu")
-                    
-                </div>
+                @Html.Partial("_Menu")
+
             </div>
         </header>
         <main class="main">
