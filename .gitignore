@@ -260,4 +260,4 @@ paket-files/
 __pycache__/
 *.pyc
 
-Rod.Web/Web.*
+Rod.Web/Web.config
