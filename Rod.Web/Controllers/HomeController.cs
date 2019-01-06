@@ -1,4 +1,5 @@
 ﻿using System.Web.Mvc;
+using Rod.Services.Bl;
 
 namespace Rod.Web.Controllers
 {
@@ -7,7 +8,10 @@ namespace Rod.Web.Controllers
         public ActionResult Index()
         {
             ViewBag.Page = "1";
-            return View();
+
+            var newsService = new PostsService();
+            var model = newsService.GetLatestPosts();
+            return View(model);
         }
 
         public ActionResult Managements()

@@ -1,0 +1,17 @@
+﻿@model Rod.Services.Vo.PostVo
+
+<article class="post-container">
+    <div class="post-image"></div>
+    <div class="post-header">
+        <div class="post-date">
+            <div class="l1">@Model.Day.ToString("dd")</div>
+            <div class="l2">@Model.Day.ToString("MMM")/@Model.Day.ToString("yy")</div>
+        </div>
+        <div class="post-title">
+            <h2>@Html.Raw(Model.Title)</h2>
+        </div>
+    </div>
+    <div class="post-content">
+        @Html.Raw(Model.Content)
+    </div>
+</article>

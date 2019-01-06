@@ -27,7 +27,7 @@ create table dbo.Posts
 (
 	Id int Identity(1,1) not null,
 	Title nvarchar(200) null,
-	Content nvarchar(500) null,
+	Content nvarchar(2000) null,
 	[Day] DateTime not null,
 	IsVisible bit not null CONSTRAINT [DF_Posts@IsVisible] Default 0,
 	IdUser int not null,

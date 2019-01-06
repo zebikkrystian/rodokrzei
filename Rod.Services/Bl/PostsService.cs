@@ -16,7 +16,7 @@ namespace Rod.Services.Bl
                 Day = x.Day,
                 Title = x.Title,
                 Content = x.Content
-            }).ToList();
+            }).OrderByDescending(x=>x.Day).ToList();
             return result;
         }
 
@@ -29,7 +29,7 @@ namespace Rod.Services.Bl
                 Day = x.Day,
                 Title = x.Title,
                 Content = x.Content
-            }).ToList();
+            }).OrderByDescending(x=>x.Day).ToList();
             return result;
         }
     }

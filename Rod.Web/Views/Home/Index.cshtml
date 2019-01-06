@@ -1,4 +1,6 @@
-﻿@{
+﻿@model List<Rod.Services.Vo.PostVo>
+
+@{
     ViewBag.Title = "Strona główna";
 }
 
@@ -68,7 +70,12 @@
             <div>
                 <h1>Najnowsze ogłoszenia</h1>
             </div>
-            <div style="padding: 30px;">Brak ogłoszeń.</div>
+            <div class="page-news">
+                @foreach (var post in Model)
+                {
+                    @Html.Partial("_Post", post)
+                }
+            </div>
 
         </div>
 

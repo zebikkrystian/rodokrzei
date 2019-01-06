@@ -191,7 +191,8 @@ body {
 
 .page-news article {
     border-bottom: 1px solid #ccc;
-    padding: 10px 0;
+    padding: 10px 0 5px 0;
+    margin-top: 10px;
 }
 
 .page-news .post-header {
@@ -231,7 +232,7 @@ body {
     height: 30px;
 }
 
-.page-news h1 {
+.page-news h2 {
     font-size: 24px;
     margin: 0;
 }
