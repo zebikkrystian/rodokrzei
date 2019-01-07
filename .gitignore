@@ -261,3 +261,4 @@ __pycache__/
 *.pyc
 
 Rod.Web/Web.*
+Rod.Repositories/App.Config
