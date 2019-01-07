@@ -115,7 +115,7 @@ body {
 
 
 
-.home h1 {
+.home h1, .page-documents h1 {
     text-align: center;
     padding: 20px;
     color: #238121;
@@ -124,7 +124,7 @@ body {
     margin-bottom: 30px;
 }
 
-    .home h1.title {
+    .home h1.title, .page-documents h1.title {
         border-bottom: 5px solid #238121;
     }
 
@@ -241,3 +241,19 @@ body {
     padding: 10px 0;
     font-size: 14px;
 }
+
+
+.page-documents {
+    padding: 10px 0;
+    background-color: #E9ECEF;
+}
+
+    .page-documents .document {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .page-documents a {
+        display: block;
+        margin-bottom: 15px;
+    }

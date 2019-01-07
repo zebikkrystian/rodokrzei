@@ -10,13 +10,13 @@ namespace Rod.Services.Bl
         public List<PostVo> GetLatestPosts()
         {
             var db = new DbEntities();
-            var posts = db.Posts.Take(3).ToList();
+            var posts = db.Posts.OrderByDescending(x => x.Day).Take(3).ToList();
             var result = posts.Select(x => new PostVo
             {
                 Day = x.Day,
                 Title = x.Title,
                 Content = x.Content
-            }).OrderByDescending(x=>x.Day).ToList();
+            }).ToList();
             return result;
         }
 
