@@ -262,3 +262,4 @@ __pycache__/
 
 Rod.Web/Web.*
 Rod.Repositories/App.Config
+Rod.Web/Documents/*
