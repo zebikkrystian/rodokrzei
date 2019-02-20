@@ -166,10 +166,10 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Documents\oplaty.docx" />
     <Content Include="Documents\oplaty.pdf" />
     <Content Include="Documents\regulamin.doc" />
     <Content Include="Documents\regulamin.pdf" />
+    <Content Include="Documents\oplaty.doc" />
     <None Include="packages.config" />
     <Content Include="Views\Documents\All.cshtml" />
     <Content Include="Views\News\All.cshtml" />
