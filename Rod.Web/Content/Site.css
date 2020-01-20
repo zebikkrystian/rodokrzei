@@ -185,6 +185,9 @@ body {
     padding: 20px 0;
 }
 
+.managements tr > td:first-of-type {
+    max-width: 50px;
+}
 
 
 
